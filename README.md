@@ -9,6 +9,7 @@ Collaborators: Runpeng Jian, Zheng Zeng
 4. **Number of Response to Reviews**: The presence or quality of a response from the business to a review affects subsequent ratings. If the resp field indicates whether a business responded to a review, this could influence future ratings, as a business that actively responds might be perceived as more customer-friendly.
 5. **Number of Reviews**: Businesses with more reviews have a better-established reputation, which might reflect in their ratings.
 6. **Users Average Rating**: Users who generally give high or low ratings across different businesses tend to maintain similar rating patterns for each review.
+7. **Clean reviews with no text**
 
 ## Predictive Task
 ***Given a user's review and the corresponding business information, predict the rating of the business.***

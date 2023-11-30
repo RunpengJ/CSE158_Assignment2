@@ -1,0 +1,26 @@
+Original Approach
+    Shuffling the Entire Dataset:
+    You shuffled the entire dataset which seems to contain both features and labels in each entry.
+    This is effective if each entry in dataset is a complete data point (including both features and the corresponding label).
+
+    Splitting After Shuffling:
+    After shuffling, you split the dataset into training and testing subsets.
+    This method ensures a random distribution of data points in both training and testing sets.
+
+
+Modified Approach
+    Separating Features and Labels:
+    This approach assumes that features and labels need to be separated into different lists. This is typically necessary when you have distinct feature vectors and label lists.
+    If your dataset entries already encapsulate both features and label together (like a dictionary with several attributes and a 'rating'), this step is unnecessary.
+    Pairing, Shuffling, and Then Splitting:
+
+    By pairing features and labels, shuffling the pairs, and then separating them back, this method ensures that the correspondence between each feature set and its label is preserved.
+    This approach is vital in cases where features and labels are initially in separate lists and you need to ensure that the relationship between a feature set and its label is not lost during shuffling.
+
+
+    Key Differences
+    Applicability: The modified approach is needed if your features and labels are initially separate and need to be paired. If your dataset entries are complete with both features and label together, as seems to be the case in your original code, then your approach is sufficient and the modification is not necessary.
+
+    Data Structure Assumption: Your approach assumes a data structure where each element in the dataset is a complete data point. The modified approach assumes two parallel lists (one for features and one for labels) that need to be kept in sync.
+
+    In summary, if your dataset variable already contains paired features and labels in each entry, your original shuffling method is appropriate and effective for your purposes. The modified approach is more suited for situations where features and labels are stored in separate lists and need to be shuffled in sync.

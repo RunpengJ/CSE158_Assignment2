@@ -24,3 +24,21 @@ Modified Approach
     Data Structure Assumption: Your approach assumes a data structure where each element in the dataset is a complete data point. The modified approach assumes two parallel lists (one for features and one for labels) that need to be kept in sync.
 
     In summary, if your dataset variable already contains paired features and labels in each entry, your original shuffling method is appropriate and effective for your purposes. The modified approach is more suited for situations where features and labels are stored in separate lists and need to be shuffled in sync.
+
+graph
+    User Avg Rating vs Rating:
+    There appears to be a positive correlation, with higher user average ratings often associated with higher individual ratings.
+
+    Business Avg Rating vs Rating:
+    A similar positive correlation as with user average ratings, indicating that users tend to rate businesses in line with the business's average rating.
+
+    Num of Reviews vs Rating:
+    There's a dense concentration of data points at the lower end of the number of reviews, which suggests that most businesses have a lower number of reviews. There doesn't appear to be a strong correlation between the number of reviews and the rating.
+
+    Response Counts vs Rating:
+    The data is heavily skewed towards lower response counts, with a few outliers having very high response counts. The correlation with rating is not clear from this plot.
+
+    Image Counts vs Rating:
+    Similar to response counts, most data points are concentrated at lower image counts with a few outliers. No clear correlation is visible.
+
+Data Balancing: If your dataset is imbalanced (e.g., more high ratings than low), consider using oversampling, undersampling, or generating synthetic samples to balance it out.

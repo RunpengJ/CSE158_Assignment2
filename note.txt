@@ -24,3 +24,10 @@ Modified Approach
     Data Structure Assumption: Your approach assumes a data structure where each element in the dataset is a complete data point. The modified approach assumes two parallel lists (one for features and one for labels) that need to be kept in sync.
 
     In summary, if your dataset variable already contains paired features and labels in each entry, your original shuffling method is appropriate and effective for your purposes. The modified approach is more suited for situations where features and labels are stored in separate lists and need to be shuffled in sync.
+
+Gradient Boosting and XGBoost are generally less sensitive to feature scaling
+
+NLTK's VADER (Valence Aware Dictionary and sEntiment Reasoner):
+
+VADER is particularly good for texts from social media, as it understands modern slangs, emoticons, and acronyms.
+It's easy to use and performs well on short texts with informal language.

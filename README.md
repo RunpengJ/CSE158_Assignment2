@@ -17,5 +17,5 @@ Collaborators: Runpeng Jian, Zheng Zeng
 ## Models
 1. Linear regression (Baseline)
 2. Gradient Boosting Decision Tree
-3. Baysian Personalization Recommendation
-4. Latent factor (Optional)
+3. Sentiment Analysis
+4. Latent Factor Model

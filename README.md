@@ -2,6 +2,8 @@
 
 Collaborators: Runpeng Jian, Zheng Zeng
 
+
+
 ## Hypothesis: 
 1. **User Uploaded Images**: The user rating is positively correlated with the number of images uploaded by the users. businesses with more uploaded images (which could be represented by the pics field or a similar field not shown in your sample) tend to receive higher ratings, possibly because more images could imply better transparency or visual appeal.
 2. **Review Text**: The sentiment or length of the review text is correlated with the rating given by the user.
@@ -19,3 +21,5 @@ Collaborators: Runpeng Jian, Zheng Zeng
 2. Gradient Boosting Decision Tree
 3. Sentiment Analysis
 4. Latent Factor Model
+
+*Report can be found [here](CSE158_A2_Report.pdf).*
